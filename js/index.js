@@ -16,7 +16,7 @@
 
 
 
-//3 you can declare same variable name again using var
+//3 you can declare same variable name again using var 
 
 // var name = "Anjana"; // Output: Anjana
 // console.log(name);
@@ -82,10 +82,41 @@
 // let b = 5;
 
 
-// a=5;
-var a;
+// // a=5;
+// var a;
+// // a=5                                   //5
+// console.log(a);
+
 // a=5
-console.log(a);
+// let a;                                      //reference error
+// console.log(a);
 
 
 
+// console.log(x); // ❌ ReferenceError
+// let x = 10;
+
+
+
+//Example Comparing All Three
+
+// console.log(a); // ✅ undefined (var is hoisted)
+// console.log(b); // ❌ ReferenceError
+// console.log(c); // ❌ ReferenceError
+
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+
+
+// function normalFunc() {
+//   console.log(this);
+// }
+// normalFunc()
+
+
+const arrowFunc = () => {
+  console.log(this);
+}
+arrowFunc()
