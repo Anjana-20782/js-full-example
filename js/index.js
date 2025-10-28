@@ -131,11 +131,27 @@
 // console.log(total);
 
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-let doubled = numbers.map(function(num) {
-  return num * 2;
-});
+// let doubled = numbers.map(function(num) {
+//   return num * 2;
+// });
 
-console.log(doubled);
+// console.log(doubled);
 
+
+
+
+//Simple Countdown Using Recursion
+
+
+function countdown(number) {
+  console.log(number);
+
+  // base condition – stop when number reaches 0
+  if (number > 1) {
+    countdown(number - 1); // recursive call
+  }
+}
+
+countdown(5);
