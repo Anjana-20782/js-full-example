@@ -160,12 +160,25 @@
 
 //Factorial Using Recursion
 
-function factorial(n) {
-  if (n === 1) {      // base condition
+// function factorial(n) {
+//   if (n === 1) {      // base condition
+//     return 1;
+//   }
+//   return n * factorial(n - 1); // recursive call
+// }
+
+// let result = factorial(5);
+// console.log("Factorial is:", result);
+
+
+//Sum of Numbers (Recursive)
+
+
+function sum(n) {
+  if (n === 1) {
     return 1;
   }
-  return n * factorial(n - 1); // recursive call
+  return n + sum(n - 1);
 }
 
-let result = factorial(5);
-console.log("Factorial is:", result);
+console.log(sum(5)); // Output: 15
