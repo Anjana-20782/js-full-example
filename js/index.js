@@ -122,10 +122,20 @@
 // arrowFunc()
 
 
-let numbers = [10, 20, 30, 40];
+// let numbers = [10, 20, 30, 40];
 
-let total = numbers.reduce(function(sum, num) {
-  return sum + num;
-}, 0);
+// let total = numbers.reduce(function(sum, num) {
+//   return sum + num;
+// }, 0);
 
-console.log(total);
+// console.log(total);
+
+
+let numbers = [1, 2, 3, 4, 5];
+
+let doubled = numbers.map(function(num) {
+  return num * 2;
+});
+
+console.log(doubled);
+
