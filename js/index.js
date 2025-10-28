@@ -145,13 +145,27 @@
 //Simple Countdown Using Recursion
 
 
-function countdown(number) {
-  console.log(number);
+// function countdown(number) {
+//   console.log(number);
 
-  // base condition – stop when number reaches 0
-  if (number > 1) {
-    countdown(number - 1); // recursive call
+//   // base condition – stop when number reaches 0
+//   if (number > 1) {
+//     countdown(number - 1); // recursive call
+//   }
+// }
+
+// countdown(5);
+
+
+
+//Factorial Using Recursion
+
+function factorial(n) {
+  if (n === 1) {      // base condition
+    return 1;
   }
+  return n * factorial(n - 1); // recursive call
 }
 
-countdown(5);
+let result = factorial(5);
+console.log("Factorial is:", result);
